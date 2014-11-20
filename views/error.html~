@@ -1,0 +1,5 @@
+<div id="error">
+	<h2>Error</h2>
+	<p data-ng-model="testVar">{{testVar}}</p>
+	<a href="remote/views/welcome.html">welcome</a>
+</div>

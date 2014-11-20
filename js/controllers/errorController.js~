@@ -1,0 +1,6 @@
+angular.module('remoteApp').controller('errorController', function ($scope) {
+	console.log("welcomeController");
+
+	$scope.testVar = 'Hello World!';
+});
+

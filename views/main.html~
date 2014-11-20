@@ -1,0 +1,19 @@
+<div id="main">
+	<h2>Main</h2>
+
+	<p data-ng-model="testVar">{{testVar}}</p>
+	
+	<form>
+		<input type="button" id="up" ng-model="up" value="up">
+		<input type="button" id="down" ng-model="down" value="down">
+		<hr>
+		<input type="button" id="left" ng-model="left" value="left">
+		<input type="button" id="right" ng-model="right" value="right">
+		<hr>
+		<input type="button" id="play" ng-model="play" value="play">
+		<input type="button" id="stop" ng-model="stop" value="stop">
+		<input type="button" id="pause" ng-model="pause" value="pause">
+	</form>
+	
+	<a href="remote/views/help.html">help</a>
+</div>
