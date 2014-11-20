@@ -7,7 +7,7 @@ angular.module('remoteApp').config(function ($routeProvider) {
 				controller: 'welcomeController',
 				templateUrl: 'views/welcome.html'
 			})
-		.when('/',
+		.when('/main',
 			{
 				controller: 'mainController',
 				templateUrl: 'views/main.html'
@@ -22,7 +22,8 @@ angular.module('remoteApp').config(function ($routeProvider) {
 				controller: 'errorController',
 				templateUrl: 'views/error.html'
 			})
-		.otherwise({redirectTo: '/' });
+		.otherwise({redirectTo: '/welcome' })
+		
 
 });
 
