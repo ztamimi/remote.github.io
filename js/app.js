@@ -22,6 +22,11 @@ angular.module('remoteApp').config(function ($routeProvider) {
 				controller: 'errorController',
 				templateUrl: 'views/error.html'
 			})
+		.when('/scanQR',
+			{
+				controller: 'scanQRController',
+				templateUrl: 'views/scanQR.html'
+			})
 		.otherwise({redirectTo: '/welcome' })
 		
 
