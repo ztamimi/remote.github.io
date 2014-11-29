@@ -1,20 +1,49 @@
-<div id="main">
+<div id="main" class="container">
 	<h2>Main</h2>
 
 	<p data-ng-model="testVar">{{testVar}}</p>
 	
 	<form>
-		<input type="button" id="up" ng-model="up" value="up">
-		<input type="button" id="down" ng-model="down" value="down">
-		<hr>
-		<input type="button" id="left" ng-model="left" value="left">
-		<input type="button" id="right" ng-model="right" value="right">
-		<hr>
-		<input type="button" id="play" ng-model="play" value="play">
-		<input type="button" id="stop" ng-model="stop" value="stop">
-		<input type="button" id="pause" ng-model="pause" value="pause">
+		<div class=row>
+		<span class="col-xs-3"></span>
+		<button id="up" ng-model="up" class="col-xs-6 btn-warning input-lg">
+			<span class="glyphicon glyphicon-plus-sign"></span>
+		</button>
+		<span class="col-xs-3"></span>
+		</div>
+		
+		<div class="row">
+		<button id="left" ng-model="left" class="col-xs-5 btn-info input-lg">
+			<span class="glyphicon glyphicon-backward"></span>
+		</button>
+		<span class="col-xs-2"></span>
+		<button id="right" ng-model="right" class="col-xs-5 btn-info input-lg">
+			<span class="glyphicon glyphicon-forward"></span>
+		</button>
+		</div>
+
+		<div class=row>
+		<span class="col-xs-3"></span>
+		<button id="down" ng-model="down" class="col-xs-6 btn-warning input-lg">
+		<span class="glyphicon glyphicon-minus-sign"></span>
+		</button>
+			<span class="col-xs-3"></span>
+		</div>
+
+		<div class="row">
+		<button id="play" ng-model="play" class="col-xs-4 btn-primary input-lg">
+			<span class="glyphicon glyphicon-play"></span>
+		</button>
+		<button id="stop" ng-model="stop" class="col-xs-4 btn-danger input-lg">
+			<span class="glyphicon glyphicon-stop"></span>
+		</button>
+		<button id="pause" ng-model="pause" class="col-xs-4 btn-success input-lg">
+			<span class="glyphicon glyphicon-pause"></span>
+		</button>
+		</div>
 	</form>
 	
-	<a href="#help">help</a>
-	<a href="#error">error</a>
+	<div class="row">
+		<a href="#help" class="btn btn-default btn-lg col-xs-12">Help</a>
+	</div>
 </div>

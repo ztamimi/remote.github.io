@@ -1,13 +1,23 @@
-angular.module('remoteApp').controller('scanQRController', function ($scope) {
+angular.module('remoteApp').controller('scanQRController', function ($scope, $location, $window) {
 	console.log("scanQRController");
 
 	$scope.testVar = 'Hello World!';
+
+	$scope.closeWindow = function() {
+		$location.path("/welcome");
+	};
 
 navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
 
 var constraints = {audio: false, video: true};
 var video = document.getElementById("video");
 var canvas = document.getElementById("canvas");
+//	video.width = $window.innerWidth;	
+//	video.height = $window.innerHeight;
+//	canvas.width = video.width;
+//	canvas.height = video.height;	
+	//console.log($window.innerWidth + ", " + $window.innerHeight);
+
 var w, h;
 var altVideo = "file:///home/zakiya/Downloads/The Best of Molecular Gastronomy at MolecularRecipes.com.mp4";
 
@@ -33,16 +43,12 @@ if (!video.src) {
 	video.type = "video/mp4";
 }
 
-document.getElementById("video").addEventListener("canplay", function() {
+document.getElementById("video").addEventListener("play", function() {
 	console.log("test canplay");
 	w = this.videoWidth;
 	h = this.videoHeight;
 	canvas.width = w;
 	canvas.height = h;
-	canvas.width
-	console.log(w + ", " + h);
-	console.log(video.src.width);
-	console.log(video.src.height);
 }, false);
 
 var context = canvas.getContext('2d');

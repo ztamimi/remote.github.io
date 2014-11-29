@@ -1,10 +1,13 @@
+<!DOCTYPE html>
 <html ng-app='remoteApp'>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 	<title>RemoteApp</title>
 </head>
 <body>
 	
-	<div ng-view=""></div>
+	<div ng-view="" class="container-fluid"></div>
 
 	<script src="js/lib/angular.min.js"></script>
 	<script src="js/lib/angular-route.min.js"></script>
@@ -13,6 +16,7 @@
 	<script src="js/controllers/mainController.js"></script>
 	<script src="js/controllers/helpController.js"></script>
 	<script src="js/controllers/errorController.js"></script>	
+	<script src="js/controllers/scanQRController.js"></script>	
 	
 </body>
 </html>

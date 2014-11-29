@@ -1,10 +1,22 @@
-<div id="ScanQR">
+<div id="ScanQR" class="container">
 	<h2>ScanQR</h2>
 
-	<div id="container">
-  		<video id="video" autoplay controls></video>
-		<button id="snap">Snap Photo</button>
-		<canvas id="canvas" style="border: 1px solid black"></canvas>
+	<div class="row">
+  		<video id="video" autoplay controls class="col-xs-12"></video>
 	</div>
-	<a href="#help">help</a>
+
+	<div class="row">
+		<button id="snap" class="btn-primary col-xs-12 btn-lg">Snap Photo</button>
+	</div>
+
+	<div class="row">
+		<canvas id="canvas" class="col-xs-12"></canvas>
+	</div>
+	
+	<div class="row">
+		<button ng-click="closeWindow()" class="col-xs-12 btn-lg btn-danger">close window</button>
+	</div>
+	<div class="row">
+	<a href="#help" class="btn btn-default btn-lg col-xs-12">help</a>
+	</div>
 </div>

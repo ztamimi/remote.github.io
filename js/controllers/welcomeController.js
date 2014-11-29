@@ -1,10 +1,11 @@
-angular.module('remoteApp').controller('welcomeController', function ($scope) {
+angular.module('remoteApp').controller('welcomeController', function ($scope, $location) {
 	console.log("welcomeController");
 
 	$scope.testVar = 'Hello World!';
 	
 	$scope.scanQR = function() {
 		console.log("scanQR");
-		window.open("#scanQR", "_self", false);
-	}
+		$location.path("/scanQR");
+	};
+
 });
