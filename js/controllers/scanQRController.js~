@@ -19,8 +19,9 @@ var canvas = document.getElementById("canvas");
 	//console.log($window.innerWidth + ", " + $window.innerHeight);
 
 var w, h;
-var altVideo = "file:///home/zakiya/Downloads/The Best of Molecular Gastronomy at MolecularRecipes.com.mp4";
+/*var altVideo = "file:///home/zakiya/Downloads/The Best of Molecular Gastronomy at MolecularRecipes.com.mp4";*/
 
+var altVideo = "video/The Best of Molecular Gastronomy at MolecularRecipes.com.mp4";
 
 function successCallback(stream) {
   window.stream = stream; // stream available to console
@@ -45,10 +46,10 @@ if (!video.src) {
 
 document.getElementById("video").addEventListener("play", function() {
 	console.log("test canplay");
-//	w = this.videoWidth;
-//	h = this.videoHeight;
-	//canvas.width = w;
-	//canvas.height = h;
+	w = this.videoWidth;
+	h = this.videoHeight;
+	canvas.width = w;
+	canvas.height = h;
 }, false);
 
 var context = canvas.getContext('2d');

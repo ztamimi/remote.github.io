@@ -19,8 +19,9 @@ var canvas = document.getElementById("canvas");
 	//console.log($window.innerWidth + ", " + $window.innerHeight);
 
 var w, h;
-var altVideo = "file:///home/zakiya/Downloads/The Best of Molecular Gastronomy at MolecularRecipes.com.mp4";
+/*var altVideo = "file:///home/zakiya/Downloads/The Best of Molecular Gastronomy at MolecularRecipes.com.mp4";*/
 
+var altVideo = "video/The Best of Molecular Gastronomy at MolecularRecipes.com.mp4";
 
 function successCallback(stream) {
   window.stream = stream; // stream available to console
