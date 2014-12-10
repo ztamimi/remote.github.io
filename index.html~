@@ -2,12 +2,30 @@
 <html ng-app='remoteApp'>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<title>RemoteApp</title>
 </head>
 <body>
 	
 	<div ng-view="" class="container"></div>
+
+<script type="text/javascript" src="js/qr/grid.js"></script>
+<script type="text/javascript" src="js/qr/version.js"></script>
+<script type="text/javascript" src="js/qr/detector.js"></script>
+<script type="text/javascript" src="js/qr/formatinf.js"></script>
+<script type="text/javascript" src="js/qr/errorlevel.js"></script>
+<script type="text/javascript" src="js/qr/bitmat.js"></script>
+<script type="text/javascript" src="js/qr/datablock.js"></script>
+<script type="text/javascript" src="js/qr/bmparser.js"></script>
+<script type="text/javascript" src="js/qr/datamask.js"></script>
+<script type="text/javascript" src="js/qr/rsdecoder.js"></script>
+<script type="text/javascript" src="js/qr/gf256poly.js"></script>
+<script type="text/javascript" src="js/qr/gf256.js"></script>
+<script type="text/javascript" src="js/qr/decoder.js"></script>
+<script type="text/javascript" src="js/qr/qrcode.js"></script>
+<script type="text/javascript" src="js/qr/findpat.js"></script>
+<script type="text/javascript" src="js/qr/alignpat.js"></script>
+<script type="text/javascript" src="js/qr/databr.js"></script>
 
 	<script src="js/lib/angular.min.js"></script>
 	<script src="js/lib/angular-route.min.js"></script>
